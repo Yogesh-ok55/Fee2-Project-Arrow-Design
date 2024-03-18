@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.package{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: 1fr 1fr;
+    box-sizing: border-box;
+    padding: 5vw;
+    background-color:rgb(231, 230, 230);
+    gap:3vw;
+}
+
+.package .bulb{
+    grid-area: 1/2/3/3;
+    display: flex;
+    flex-direction: column;
+    padding:60px 10px 10px 10px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+}
+.package .trolly{
+    grid-area: 1/3/3/4;
+   
+    display: flex;
+    flex-direction: column;
+    padding:60px 10px 10px 10px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+}
+.package .imgpic{
+    grid-area: 1/4/3/5;
+    
+    display: flex;
+    flex-direction: column;
+    padding:60px 10px 10px 10px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+}
+
+.package .bulb,
+.package .trolly,
+.package .imgpic{
+    text-align: center;
+}
+
+.package button{
+    background-color: rgb(255, 128, 0);
+    color: aliceblue;
+    border: none;
+    margin-right: 20px;
+    text-align: center;
+    width: 140px;
+    height: 40px;
+}
+.package .textpackage{
+   padding-top: 12vh;
+   padding-left: 10vw;
+   font-size:x-large;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.package .textpackage p{
+    font-size: 7vh;
+
+}
+
+.package span{
+    color: orangered;
+}
+
+.package button:hover{
+    scale:1.09;
+}
+
+@media (max-width:1120px){
+    .package{
+       height: auto;
+       width: auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .package .textpackage p{
+        font-size: 50px;
+    }
+    .package .textpackage{
+        grid-area: 1/1/2/2;
+    }
+
+    .package .bulb{
+        grid-area: 1/2/2/3;
+    }
+
+    .package .trolly{
+        grid-area: 2/1/2/2;
+    }
+
+    .package .imgpic{
+        grid-area: 2/2/3/3;
+    }
+}
+
+@media (max-width:700px){
+    .package .textpackage p{
+        font-size: 40px;
+    }
+}

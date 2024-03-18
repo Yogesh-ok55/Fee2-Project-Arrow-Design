@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.footer{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:4fr 1fr;
+}
+
+.footer span{
+    color: orangered;
+}
+.footer .laptop{
+    background: url('/images/rectangle_1_copy_18.jpg');
+    background-position:center;
+    background-size:cover;
+    background-repeat: no-repeat;
+
+}
+.footer .copyright{
+    grid-area: 2/1/3/3;
+    text-align: center;
+    padding-top: 50px;
+    background-color:rgb(232, 228, 228);
+    
+}
+
+
+
+.footer .contact{
+    display: flex;
+    padding-top: 50px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer img{
+    width: 35px;
+    height: 40px;
+}
+
+.footer .contact .contactinfo{
+    display: flex;
+    gap: 20px;
+    height: 80px;
+    width: 250px;
+}
+.footer .contact .contactheading{
+    padding: 20px;
+    height: 80px;
+    width: 250px;
+}
+
+.footer .contact .contactinfo h4{
+    color: orangered;
+}
+
+@media (max-width:788px){
+    .footer{
+        grid-template-columns: 1fr;
+        grid-template-rows:4fr 1fr;
+    }
+
+    .footer .contact{
+        grid-area:1/1/2/2;
+    }
+
+    .footer .laptop{
+        display: none;
+    }
+
+    .footer .copyright{
+        grid-area:2/1/3/2;
+    }
+}

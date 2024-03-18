@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.Gallery{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 0.7fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.SecretText{
+    display: none;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.Gallery .floor{
+    grid-area: 1/1/2/3;
+    background: url('/images/rectangle_1_copy_17.jpg');
+    background-position:center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.Gallery .Newspaper{
+    grid-area: 1/3/2/5;
+    background: url('/images/rectangle_1_copy_29.jpg');
+    background-position:center;
+    background-size:cover;
+    background-repeat: no-repeat;
+
+}
+
+.Gallery .Beer{
+    grid-area: 2/1/4/2;
+    background: url('/images/rectangle_1_copy_16.jpg');
+    background-position:center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.Gallery .textportfoli{
+    grid-area: 2/2/4/3;
+    text-align: center;
+    padding-top: 30vh;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Gallery .textportfoli p{
+    font-size: 5vh;
+}
+.Gallery .textportfoli span{
+    color: orangered;
+}
+
+.Gallery .ctp{
+    grid-area: 2/3/3/4;
+    background: url('/images/rectangle_1_copy_19.jpg');
+    background-position:center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.Gallery .bagpaper{
+    grid-area: 2/4/4/5;
+    background: url('/images/rectangle_1_copy_15_2.jpg');
+    background-position:center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.Gallery .cofeecup{
+    grid-area: 3/3/4/4;
+    background: url('/images/rectangle_1_copy_20.jpg');
+    background-position:center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.hide{
+    display: none;
+    font-size: 10vh;
+    text-align: center;
+    color: orangered;
+    padding-top: 1vh;
+}
+
+@media (max-width:700px){
+    .Gallery{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.7fr 1fr 1fr 1fr;
+        height: 100vh;
+        text-align: center;
+    }
+    .Gallery .Newspaper{
+        grid-area: 2/1/3/3;
+    }
+
+    .Gallery .cofeecup{
+        grid-area: 2/3/3/4;
+        background-size:cover;
+    }
+
+    .Gallery .floor{
+        grid-area: 3/1/4/3;
+    }
+
+    .Gallery .bagpaper{
+        grid-area: 3/3/5/3;
+    }
+    
+    .Gallery .textportfoli{
+        grid-area: 1/1/2/4;
+        height: 10px;
+    }
+    
+    .hide{
+        display: block;
+        grid-area: 4/1/5/3;
+    }
+    
+    .Gallery .Beer{
+        display: none;
+    }
+
+    .SecretText{
+        padding-top:2vh;
+        display: block;
+        grid-area: 1/1/2/4;
+    }
+    .SecretText span{
+        color: orangered;
+    }
+
+    .Text1{
+        display: none;
+    }
+}

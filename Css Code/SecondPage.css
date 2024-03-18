@@ -1,0 +1,125 @@
+.secondpage{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.secondpage .about{
+    width: 30%;
+    padding-top: 100px;
+    padding-right: 40px;
+    margin: 10px;
+}
+
+.secondpage .about span{
+    color: coral;
+}
+
+.secondpage .about h1{
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.secondpage .image{
+    margin: 10px;
+    margin-top: 20px;
+    height: 567px;
+    width: 20vw;
+    background-image: url("/images/rectangle_1_copy_5.jpg");
+    background-position:center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    margin-right: 70px;
+    color:white;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.secondpage .image h3{
+    padding-top: 45px;
+    padding-left: 80px;
+}
+
+
+.secondpage .image h5{
+    padding-bottom: 45px;
+    padding-left: 130px;
+}
+
+.secondpage .image .divborder{
+    
+    border-bottom: 2px solid white;
+}
+.secondpage .image .img1{
+   width: 40px;
+   position: relative;
+   left:250px;
+}
+.secondpage .image .img2{
+   width: 40px;
+   position: relative;
+   left:204px;
+}
+.secondpage .image .img3{
+   width: 40px;
+   position: relative;
+   left:180px;
+}
+.secondpage .image .img4{
+   width: 40px;
+   position: relative;
+   left:170px;
+}
+
+.secondpage .paragraphs{
+    margin: 20px;
+   width: 30%;
+   padding-top: 50px;
+}
+
+.secondpage .paragraphs p{
+    margin-bottom: 50px;
+}
+
+
+@media (max-width:1411px){
+
+    .secondpage{
+        height: auto;
+    }
+
+    .secondpage .image h3{
+        padding-top: 45px;
+        padding-left: 10px;
+
+    }
+    .secondpage .image h5{
+        padding-bottom: 45px;
+        padding-left: 30px;
+    }
+
+}
+@media (max-width:950px){
+     
+    .secondpage{
+        flex-wrap: wrap;
+    }
+    .secondpage .about{
+        width: 100%;
+    }
+    .secondpage .image{
+        height: 500px;
+        width: 200px;
+    }
+    .secondpage .paragraphs{
+        width: 50%;
+    }
+}
+
+@media (max-width:750px){
+    .secondpage .paragraphs{
+        width: 100%;
+    }
+}

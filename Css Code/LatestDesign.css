@@ -1,0 +1,111 @@
+html{
+  scroll-behavior:smooth;
+}
+
+.trial {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1.1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    box-sizing: border-box;
+    gap: 10px;
+    padding: 50px;
+    /* padding-left: 100px; */
+  }
+  
+  .latestdesign .design3 {
+    grid-area: 1/4/5/5;
+  }
+  
+  .latestdesign .design1 {
+    background: url("/images/rectangle_1_copy_21.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .latestdesign .design4 {
+    background: url("/images/rectangle_1_copy_22.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .latestdesign .design7 {
+    background: url("/images/rectangle_1_copy_23.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .latestdesign .design3 {
+    background: url("/images/rectangle_1_copy_24.jpg");
+    background-position:top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 10px;
+  }
+  .design3 .imgcontent {
+    position: relative;
+    top: 390px;
+  }
+  .latestdesign .design6 {
+    font-size: 26px;
+  }
+  .design6 span {
+    color: red;
+    display: block;
+  }
+  
+  .latestdesign .design2,
+  .latestdesign .design5,
+  .latestdesign .design8 {
+    padding: 5px;
+  }
+  
+  .design h4 {
+    padding-bottom: 10px;
+  }
+  .alternate {
+    display: none;
+  }
+  @media (max-width:1150px){
+    .trial{
+    height: auto;
+    }
+  }
+  /* media queries */
+  @media only screen and (max-width: 900px) {
+    .trial {
+      grid-template-columns: 1fr 1fr 1fr;
+      padding: 25px;
+      height: auto;
+    }
+    .design6 {
+      display: none;
+    }
+    .alternate {
+      display: block;
+      text-align: center;
+      margin-bottom: 0;
+    }
+    .empty {
+      display: none;
+    }
+    .latestdesign .design3 {
+      grid-area: 1/3/4/4;
+    }
+  }
+
+
+  
+  @media only screen and (max-width: 700px) {
+    .alternate {
+      font-size: 13px;
+    }
+    .trial {
+      grid-template-columns: 1fr 1fr;
+      padding: 15px;
+    }
+    .latestdesign .design3 {
+      display: none;
+    }
+  }
